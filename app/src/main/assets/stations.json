@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Tajrish",
+    "nameFa": "تجریش",
+    "line": 1,
+    "x": 3939,
+    "y": 225,
+    "neighbors": [2]
+  },
+  {
+    "id": 2,
+    "name": "Ghaem",
+    "nameFa": "قائم",
+    "line": 3,
+    "x": 5538,
+    "y": 558,
+    "neighbors": [3]
+  },
+  {
+    "id": 3,
+    "name": "Darvazeh Shemiran",
+    "nameFa": "دروازه شمیران",
+    "line": 4,
+    "x": 4098,
+    "y": 2028,
+    "neighbors": [4, 5]
+  },
+  {
+    "id": 4,
+    "name": "Shahid Beheshti",
+    "nameFa": "شهید بهشتی",
+    "line": 1,
+    "x": 3690,
+    "y": 1437,
+    "neighbors": [3, 6]
+  },
+  {
+    "id": 5,
+    "name": "Mirdamad",
+    "nameFa": "میرداماد",
+    "line": 1,
+    "x": 3933,
+    "y": 912,
+    "neighbors": [4, 7]
+  },
+  {
+    "id": 6,
+    "name": "Azadi",
+    "nameFa": "آزادی",
+    "line": 4,
+    "x": 1905,
+    "y": 2016,
+    "neighbors": [3, 8]
+  },
+  {
+    "id": 7,
+    "name": "Sadeghieh",
+    "nameFa": "صادقیه",
+    "line": 2,
+    "x": 2040,
+    "y": 1581,
+    "neighbors": [6]
+  },
+  {
+    "id": 8,
+    "name": "Teatr Shahr",
+    "nameFa": "تئاتر شهر",
+    "line": 4,
+    "x": 3306,
+    "y": 2022,
+    "neighbors": [3, 9]
+  },
+  {
+    "id": 9,
+    "name": "Imam Khomeini",
+    "nameFa": "امام خمینی",
+    "line": 1,
+    "x": 3693,
+    "y": 2406,
+    "neighbors": [8, 10]
+  },
+  {
+    "id": 10,
+    "name": "Shahre Rey",
+    "nameFa": "شهر ری",
+    "line": 1,
+    "x": 3690,
+    "y": 3606,
+    "neighbors": [9]
+  }
+]
