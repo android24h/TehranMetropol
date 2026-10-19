@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Legacy launcher icon (API 24-25). Generated from ic_launcher_background + ic_launcher_foreground; keep in sync. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="76"
+    android:viewportHeight="76">
+    <group>
+        <clip-path android:pathData="M18,2h40a16,16 0,0 1,16 16v40a16,16 0,0 1,-16 16h-40a16,16 0,0 1,-16 -16v-40a16,16 0,0 1,16 -16z" />
+        <group android:translateX="-16" android:translateY="-16">
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="0"
+                android:endX="108"
+                android:endY="108">
+                <item android:color="#FF1E1B4B" android:offset="0.0" />
+                <item android:color="#FF3730A3" android:offset="0.5" />
+                <item android:color="#FF6D28D9" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="34"
+                android:centerY="28"
+                android:gradientRadius="72">
+                <item android:color="#2EFFFFFF" android:offset="0.0" />
+                <item android:color="#00FFFFFF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Lines -->
+    <path
+        android:pathData="M54,26L54,82"
+        android:strokeWidth="6.5"
+        android:strokeColor="#FF38BDF8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M28,66L42,66L66,42L80,42"
+        android:strokeWidth="6.5"
+        android:strokeColor="#FFFACC15"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M28,42L42,42L66,66L80,66"
+        android:strokeWidth="6.5"
+        android:strokeColor="#FFF43F5E"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <!-- Terminal stations -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M50.6,26a3.4,3.4 0,1 0,6.8 0a3.4,3.4 0,1 0,-6.8 0M50.6,82a3.4,3.4 0,1 0,6.8 0a3.4,3.4 0,1 0,-6.8 0"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FF38BDF8" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M24.6,66a3.4,3.4 0,1 0,6.8 0a3.4,3.4 0,1 0,-6.8 0M76.6,42a3.4,3.4 0,1 0,6.8 0a3.4,3.4 0,1 0,-6.8 0"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FFFACC15" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M24.6,42a3.4,3.4 0,1 0,6.8 0a3.4,3.4 0,1 0,-6.8 0M76.6,66a3.4,3.4 0,1 0,6.8 0a3.4,3.4 0,1 0,-6.8 0"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FFF43F5E" />
+    <!-- Pin shadow -->
+    <path
+        android:fillColor="#40000000"
+        android:pathData="M47,70.5a7,2 0,1 0,14 0a7,2 0,1 0,-14 0" />
+    <!-- Pin -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,69C50.5,64.6 42,57 42,49A12,12 0,1 1,66 49C66,57 57.5,64.6 54,69Z"
+        android:strokeWidth="2.4"
+        android:strokeColor="#FF2A2470"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#FF4338CA"
+        android:pathData="M48.5,49a5.5,5.5 0,1 0,11 0a5.5,5.5 0,1 0,-11 0" />
+        </group>
+    </group>
+</vector>
