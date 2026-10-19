@@ -1,92 +1,59 @@
-# 🚇 نرم‌افزار مسیریابی متروپل تهران
+# 🚇 Metropool – Tehran Metro Navigator | متروپل
 
-اپلیکیشن **تهران متروپل** یک نرم‌افزار اندرویدی است که مسیر بین ایستگاه‌های متروی تهران را نمایش می‌دهد.  
-این برنامه با زبان **Kotlin** و معماری **Jetpack Android** توسعه داده شده است.
+A beautiful, bilingual (English / فارسی) Android app for finding the fastest way across the Tehran Metro.
+Built with **Kotlin + Jetpack Compose**, following **MVVM + Clean Architecture**.
 
----
+## ✨ Features
 
-## 🧭 امکانات برنامه
-- انتخاب ایستگاه مبدأ و مقصد  
-- محاسبه مسیر بین خطوط مترو  
-- نمایش ایستگاه‌های عبوری بین دو نقطه  
-- نمایش مسیر روی نقشه متروی تهران  
-- طراحی رابط کاربری مدرن با متریال دیزاین  
+- **Origin & destination search**: forgiving bilingual autocomplete. It ignores spacing and Arabic/Persian letter variants, and accepts Persian digits.
+- **Pick on the map**: tap the map icon beside the origin field to choose stations on an OpenStreetMap map of Tehran. You can also jump to the **station nearest to you**.
+- **Fastest Route**: total travel time, arrival clock, which **direction** (terminal) to board, and every **line change**.
+- **More details**: every station on the route with estimated times, plus the expected **wait for each leg** and walking time inside interchanges.
+- **Show on map**: the route drawn in official line colors over a faint network layer, with labelled origin, transfer and destination markers, and an animated train gliding along the path.
+- **Fastest / Fewest changes** toggle.
+- **Time-aware estimates**: waits scale with rush hour, late evening, and closed hours.
+- 🌟 **Ride mode** (the creative feature): a live trip companion with a progress ring, next stop, upcoming change, keep-screen-on, and optional **notifications ~1.5 min before every change and before your stop**.
+- 🌱 CO₂ saved compared with driving.
+- Side menu: **English / Persian** (full RTL), **Day / Night / Auto** theme, and developer contact.
+- **Tutorial** (the "?" button, also shown automatically on first launch).
+- Recent trips and an overview of all lines.
 
----
+## 🏛 Architecture
 
-## 🧰 تکنولوژی‌ها و ابزارها
-- **زبان برنامه‌نویسی:** Kotlin  
-- **چارچوب:** Android Jetpack  
-- **UI Framework:** XML + ViewBinding  
-- **معماری:** Activity / ViewModel  
-- **ابزار توسعه:** Android Studio  
-- **کتابخانه‌ها:**  
-  - AndroidX  
-  - RecyclerView  
-  - ConstraintLayout  
-  - Material Components  
-
----
-
-## 🖼️ تصاویر برنامه
-
-### صفحه‌ی اصلی
-![Main Screen](images/screenshot_main.jpg)
-
-### مسیر پیشنهادی
-![Suggested Route](images/screenshot_result.jpg)
-
-### نقشه‌ی مترو
-![Metro Map](images/metro_map.jpg)
-
-*(توجه: تصاویر را در پوشه‌ی `images/` در کنار فایل README.md قرار دهید.)*
-
----
-
-## ⚙️ نحوه اجرا
-
-1. کلون کردن پروژه:
-   ```bash
-   git clone https://github.com/USERNAME/TehranMetropol.git
-   ```
-
-2. اجرای پروژه در Android Studio  
-   - گزینه **File → Open** را بزنید  
-   - پوشه پروژه را انتخاب کنید  
-   - منتظر بمانید تا Gradle Sync کامل شود  
-   - برنامه را روی شبیه‌ساز یا گوشی اجرا کنید ✅  
-
----
-
-## 🗂️ ساختار پوشه‌ها
 ```
-app/
- ├── java/com/example/tehranmetropoll/
- │    ├── MainActivity.kt
- │    ├── adapters/
- │    ├── models/
- │    └── utils/
- ├── res/
- │    ├── layout/
- │    ├── drawable/
- │    ├── values/
- │    └── mipmap/
- └── AndroidManifest.xml
+com.example.tehranmetropoll
+├── domain/                 Pure Kotlin – no Android imports
+│   ├── model/              Station, MetroLine, MetroNetwork, Route, RouteLeg, …
+│   ├── repository/         Interfaces (MetroRepository, SettingsRepository, …)
+│   ├── routing/            RoutePlanner (Dijkstra over station×line), StationMatcher, ServiceSchedule
+│   └── usecase/            FindRoute, SearchStations, FindNearestStation, TrackRideProgress, …
+├── data/                   Implementations
+│   ├── source/             JSON asset parser  (assets/metro_network.json)
+│   ├── repository/         MetroRepositoryImpl, SettingsRepositoryImpl (DataStore), LanguageRepositoryImpl
+│   ├── location/           LocationManager-based location (no Play Services)
+│   └── reminder/           WorkManager ride alerts + notification worker
+├── di/AppContainer.kt      Manual dependency injection
+└── presentation/           MVVM – Compose screens + ViewModels (StateFlow UI state)
+    ├── home/  picker/  route/  map/  ride/  tutorial/  navigation/  theme/  components/
 ```
 
----
+**Routing.** The planner runs Dijkstra over *(station, line)* states. Riding between neighbours costs the running time, derived from distance and line speed, plus a dwell. Boarding costs half the line's current headway. Changing lines adds the interchange walk. Airport branches (Line 1 → IKA, Line 4 → Mehrabad) are modelled as separate services.
 
-## 👨‍💻 توسعه‌دهنده
-طراحی و توسعه توسط **[نام شما]**  
-📧 ایمیل: [ایمیل شما]
+## 🗺 Data
 
----
+`app/src/main/assets/metro_network.json` holds all 7 lines plus both airport branches: stations with English and Persian names, coordinates, line order, typical headways, and interchange walking times. It is plain JSON, so you can update it as the network grows.
 
-## 📜 مجوز
-این پروژه تحت مجوز **MIT** منتشر شده است.  
-می‌توانید آزادانه از آن استفاده و آن را توسعه دهید.
+> Coordinates, headways and travel times are approximations, intended for trip estimates rather than official timetables.
 
----
+## ⚙️ Build
 
-**Tehran Metropol** © 2025  
-اپلیکیشن مسیریابی هوشمند برای متروی تهران 🚆
+- Android Studio Ladybug or newer, JDK 17
+- `./gradlew assembleDebug`
+- Unit tests: `./gradlew testDebugUnitTest`
+
+Map tiles: © OpenStreetMap contributors © CARTO (an internet connection is required to show map tiles).
+
+## 👨‍💻 Developer
+
+**Alireza Halvaei Fard** – علیرضا حلوایی‌فرد
+📱 09360896001 · 📧 halvaei@gmail.com

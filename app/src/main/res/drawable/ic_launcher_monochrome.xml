@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 13+ themed icon: single-colour silhouette of the pin with line stubs radiating out. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M28,42L37,42M28,66L38,66M71,42L80,42M70,66L80,66M54,26L54,30M54,76L54,82"
+        android:strokeWidth="6.5"
+        android:strokeColor="#FF000000"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M23.8,42a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0M23.8,66a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0M75.8,42a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0M75.8,66a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0M49.8,26a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0M49.8,82a4.2,4.2 0,1 0,8.4 0a4.2,4.2 0,1 0,-8.4 0" />
+    <path
+        android:fillColor="#FF000000"
+        android:fillType="evenOdd"
+        android:pathData="M54,70C50.3,65.4 41,57.4 41,49A13,13 0,1 1,67 49C67,57.4 57.7,65.4 54,70ZM48.5,49a5.5,5.5 0,1 0,11 0a5.5,5.5 0,1 0,-11 0Z" />
+</vector>

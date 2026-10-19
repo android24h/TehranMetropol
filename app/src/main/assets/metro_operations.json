@@ -1,0 +1,405 @@
+{
+  "_readme": [
+    "Operational data for Tehran Metro, used offline by the app. Edit freely; no code changes needed.",
+    "Every value marked \"verified\": false is a PLACEHOLDER and must be replaced with official data, then set \"verified\": true.",
+    "While a value is unverified the app still uses it but labels it as unverified on screen.",
+    "Directions: one entry per line and travel direction. \"toward\" is the station id (from metro_network.json) of the terminal the train is heading to, as shown on platform signs.",
+    "lastTrain: departure time of the LAST train from the OPPOSITE terminal (where that direction starts), in Tehran local time, \"HH:mm\". Times after midnight may be written as 24:10, 24:30 …",
+    "The app adds the estimated running time from that terminal to each boarding station.",
+    "Day types: weekday = Saturday–Thursday, friday = Fridays, holiday = official holidays listed under holidays.dates. If holiday is missing the friday time is used.",
+    "holidays.dates: Gregorian dates (YYYY-MM-DD, Tehran calendar day) of official public holidays.",
+    "serviceDayStartsAt: times before this belong to the previous day’s service (so 00:30 is still ‘tonight’).",
+    "stationEntryMinutes: time allowed to get from the station entrance to the platform at the origin.",
+    "lastTrainWarningMinutes: show the ‘leave soon’ warning when the latest departure is within this many minutes.",
+    "womenCars: carsPerTrain is the train length; womenOnlyCars lists women-only car numbers counted from the FRONT of the train (1 = first car in the direction of travel)."
+  ],
+  "version": 1,
+  "timeZone": "Asia/Tehran",
+  "serviceDayStartsAt": "03:00",
+  "stationEntryMinutes": 3,
+  "lastTrainWarningMinutes": 45,
+  "holidays": {
+    "verified": false,
+    "dates": []
+  },
+  "lines": [
+    {
+      "lineId": "L1",
+      "_label": "Line 1",
+      "directions": [
+        {
+          "toward": "kahrizak",
+          "_label": "Tajrish → Kahrizak",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "tajrish",
+          "_label": "Kahrizak → Tajrish",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L1A",
+      "_label": "Line 1 · Airport branch",
+      "directions": [
+        {
+          "toward": "ika_airport",
+          "_label": "Shahed – Bagher Shahr → Imam Khomeini Airport",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "shahed_bagher_shahr",
+          "_label": "Imam Khomeini Airport → Shahed – Bagher Shahr",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L2",
+      "_label": "Line 2",
+      "directions": [
+        {
+          "toward": "tehran_sadeghieh",
+          "_label": "Farhangsara → Tehran (Sadeghieh)",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "farhangsara",
+          "_label": "Tehran (Sadeghieh) → Farhangsara",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L3",
+      "_label": "Line 3",
+      "directions": [
+        {
+          "toward": "azadegan",
+          "_label": "Ghaem → Azadegan",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "ghaem",
+          "_label": "Azadegan → Ghaem",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L4",
+      "_label": "Line 4",
+      "directions": [
+        {
+          "toward": "allameh_jafari",
+          "_label": "Shahid Kolahdooz → Allameh Jafari",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "shahid_kolahdooz",
+          "_label": "Allameh Jafari → Shahid Kolahdooz",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L4A",
+      "_label": "Line 4 · Mehrabad branch",
+      "directions": [
+        {
+          "toward": "mehrabad_t4_t6",
+          "_label": "Bimeh → Mehrabad Airport T4 & T6",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "bimeh",
+          "_label": "Mehrabad Airport T4 & T6 → Bimeh",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L5",
+      "_label": "Line 5",
+      "directions": [
+        {
+          "toward": "golshahr",
+          "_label": "Tehran (Sadeghieh) → Golshahr",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "tehran_sadeghieh",
+          "_label": "Golshahr → Tehran (Sadeghieh)",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L6",
+      "_label": "Line 6",
+      "directions": [
+        {
+          "toward": "kouhsar",
+          "_label": "Shrine of Abdol-Azim → Kouhsar",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "haram_abdolazim",
+          "_label": "Kouhsar → Shrine of Abdol-Azim",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lineId": "L7",
+      "_label": "Line 7",
+      "directions": [
+        {
+          "toward": "meydan_basij",
+          "_label": "Sanat Square → Basij Square",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "toward": "meydan_sanat",
+          "_label": "Basij Square → Sanat Square",
+          "lastTrain": {
+            "verified": false,
+            "weekday": "22:00",
+            "friday": "22:00",
+            "holiday": "22:00"
+          },
+          "womenCars": {
+            "verified": false,
+            "carsPerTrain": 7,
+            "womenOnlyCars": [
+              1,
+              7
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

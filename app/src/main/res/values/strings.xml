@@ -1,3 +1,254 @@
 <resources>
-    <string name="app_name">Tehran Metropoll</string>
+    <string name="app_name">Metropool</string>
+    <string name="app_tagline">Tehran Metro, beautifully simple</string>
+
+    <!-- Home -->
+    <string name="home_greeting_title">Where to today?</string>
+    <string name="home_greeting_subtitle">%1$s lines · %2$s stations across Tehran</string>
+    <string name="origin_label">Origin</string>
+    <string name="origin_placeholder">Start station, e.g. Sadeghieh</string>
+    <string name="destination_label">Destination</string>
+    <string name="destination_placeholder">Where to? e.g. Mirdamad</string>
+    <string name="pick_on_map">Pick stations on the map</string>
+    <string name="swap">Swap origin and destination</string>
+    <string name="clear">Clear</string>
+    <string name="fastest_route">Fastest Route</string>
+    <string name="recent_trips">Recent trips</string>
+    <string name="clear_all">Clear all</string>
+    <string name="metro_lines">Metro lines</string>
+    <string name="line_number">Line %1$s</string>
+    <string name="menu">Menu</string>
+    <string name="help">How to use</string>
+    <string name="error_pick_origin">Choose an origin station from the suggestions</string>
+    <string name="error_pick_destination">Choose a destination station from the suggestions</string>
+    <string name="error_same_station">Origin and destination are the same station</string>
+    <string name="no_results">No station matches “%1$s”</string>
+    <string name="interchange">Interchange</string>
+
+    <!-- Drawer -->
+    <string name="drawer_language">Language</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_persian" translatable="false">فارسی</string>
+    <string name="drawer_appearance">Appearance</string>
+    <string name="theme_system">Auto</string>
+    <string name="theme_light">Day</string>
+    <string name="theme_dark">Night</string>
+    <string name="drawer_help">App tutorial</string>
+    <string name="drawer_developer">Developer</string>
+    <string name="developer_name">Alireza Halvaei Fard</string>
+    <string name="developer_role">Android Developer</string>
+    <string name="developer_phone" translatable="false">09360896001</string>
+    <string name="developer_email" translatable="false">halvaei@gmail.com</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="version_label">Version %1$s</string>
+    <string name="map_attribution" translatable="false">© OpenStreetMap contributors © CARTO</string>
+
+    <!-- Map picker -->
+    <string name="picker_title">Choose on map</string>
+    <string name="picker_hint">Tap any station on the map</string>
+    <string name="set_origin">Set as origin</string>
+    <string name="set_destination">Set as destination</string>
+    <string name="confirm">Confirm</string>
+    <string name="from_label">From</string>
+    <string name="to_label">To</string>
+    <string name="not_selected">Not selected</string>
+    <string name="near_me">Nearest station to me</string>
+    <string name="locating">Finding your location…</string>
+    <string name="location_unavailable">Couldn\'t get your location. Make sure location is turned on.</string>
+    <string name="location_denied">Location permission is needed to find the nearest station.</string>
+    <string name="nearest_station_found">Nearest station: %1$s · %2$s away</string>
+    <string name="distance_m">%1$s m</string>
+    <string name="distance_km">%1$s km</string>
+    <string name="back">Back</string>
+
+    <!-- Route -->
+    <string name="route_title">Your trip</string>
+    <string name="minutes_short">min</string>
+    <string name="arrive_at">Arrive %1$s</string>
+    <plurals name="stops_count">
+        <item quantity="one">%1$s stop</item>
+        <item quantity="other">%1$s stops</item>
+    </plurals>
+    <string name="transfers_none">No changes</string>
+    <plurals name="transfers_count">
+        <item quantity="one">%1$s change</item>
+        <item quantity="other">%1$s changes</item>
+    </plurals>
+    <string name="pref_fastest">Fastest</string>
+    <string name="pref_fewest">Fewest changes</string>
+    <string name="status_peak">Rush hour – trains are frequent but crowded.</string>
+    <string name="status_late">Late evening – trains run less often.</string>
+    <string name="status_closed">The metro is closed now (service ≈ 05:30–22:30). Times assume the first morning trains.</string>
+    <string name="start_at">Start at %1$s</string>
+    <string name="take_line_toward">Take %1$s toward %2$s</string>
+    <string name="board_hint">Follow platform signs for “%1$s”</string>
+    <string name="wait_about">Wait ≈ %1$s min · a train every %2$s min</string>
+    <string name="ride_stops">Ride %1$s · %2$s min</string>
+    <string name="get_off_at">Get off at %1$s</string>
+    <string name="change_at">Change at %1$s</string>
+    <string name="walk_to_line">Walk ≈ %1$s min to the %2$s platform</string>
+    <string name="arrive_destination">Arrive at %1$s</string>
+    <string name="arrive_eta">Estimated arrival %1$s</string>
+    <string name="more_details">More details</string>
+    <string name="less_details">Hide details</string>
+    <string name="all_stations">Every station on your route</string>
+    <string name="leg_header">%1$s · toward %2$s</string>
+    <string name="wait_leg">Wait ≈ %1$s min</string>
+    <string name="walk_leg">Walk ≈ %1$s min</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="eco_title">Greener trip</string>
+    <string name="eco_body">You save ≈ %1$s kg CO₂ compared with driving %2$s km.</string>
+    <string name="route_not_found">No route found between these stations.</string>
+    <string name="total_wait">Total waiting ≈ %1$s min</string>
+    <string name="transfer_badge">Change</string>
+    <string name="estimates_note">Times are estimates based on typical train frequency.</string>
+    <string name="steps_title">Step by step</string>
+    <string name="retry">Try again</string>
+
+    <!-- Ride mode -->
+    <string name="ride_title">Trip tracking</string>
+    <string name="ride_remaining">min left</string>
+    <string name="ride_to">to %1$s</string>
+    <string name="ride_phase_waiting">Waiting for %1$s toward %2$s</string>
+    <string name="ride_phase_riding">On %1$s toward %2$s</string>
+    <string name="ride_phase_transfer">Changing to %1$s at %2$s</string>
+    <string name="ride_phase_arrived">You\'ve arrived at %1$s 🎉</string>
+    <string name="ride_next_stop">Next stop</string>
+    <string name="ride_coming_up">Coming up</string>
+    <string name="ride_next_transfer">Change to %1$s at %2$s in ≈ %3$s min</string>
+    <string name="ride_next_arrival">Get off at %1$s in ≈ %2$s min</string>
+    <string name="ride_end">Stop tracking</string>
+    <string name="ride_done">Done</string>
+    <string name="ride_note">Progress follows the timetable estimate (GPS doesn\'t work underground). If you\'re ahead or behind, tap the station you\'re at.</string>
+    <string name="ride_elapsed">%1$s min into your trip</string>
+
+    <!-- Alerts -->
+    <string name="alert_channel_name">Wake-me-up alerts</string>
+    <string name="alert_channel_description">Vibrates and rings one station before each line change and your stop</string>
+    <string name="alert_transfer_title">Change at %1$s next</string>
+    <string name="alert_transfer_body">Get ready to switch to Line %1$s toward %2$s.</string>
+    <string name="alert_arrival_title">Almost at %1$s</string>
+    <string name="alert_arrival_body">Your stop is next – get ready to get off.</string>
+
+    <!-- Metro lines section -->
+    <string name="metro_lines_summary">%1$s lines · tap to see all</string>
+    <string name="state_expanded">Expanded</string>
+    <string name="state_collapsed">Collapsed</string>
+
+    <!-- Drawer extras -->
+    <string name="close_menu">Close menu</string>
+    <string name="developer_initials" translatable="false">AH</string>
+    <string name="developer_phone_display" translatable="false">0936 089 6001</string>
+    <string name="developer_linkedin_url" translatable="false">https://www.linkedin.com/in/alirezahalvaei/</string>
+    <string name="developer_linkedin_handle" translatable="false">in/alirezahalvaei</string>
+    <string name="developer_github_url" translatable="false">https://github.com/android24h</string>
+    <string name="developer_github_handle" translatable="false">github.com/android24h</string>
+    <string name="linkedin" translatable="false">LinkedIn</string>
+    <string name="github" translatable="false">GitHub</string>
+    <string name="developed_by">Designed &amp; developed by</string>
+    <string name="developer_cta">Get in touch</string>
+
+    <!-- Splash -->
+    <string name="splash_tribute">In loving memory of those we lost in the Metropol tragedy. You will forever live on in our hearts.</string>
+    <string name="splash_ribbon">Black mourning ribbon</string>
+
+    <!-- Tutorial (coach marks on the home screen) -->
+    <string name="tutorial_skip">Skip</string>
+    <string name="tutorial_next">Next</string>
+    <string name="tutorial_done">Let\'s go</string>
+    <string name="tutorial_step">Step %1$s of %2$s</string>
+    <string name="tutorial_tap_hint">Tap anywhere to continue</string>
+    <string name="coach_origin_title">Your starting point</string>
+    <string name="coach_origin_body">Tap here to select your origin. Type a station name in English or Persian and pick it from the suggestions.</string>
+    <string name="coach_destination_title">Where are you heading?</string>
+    <string name="coach_destination_body">Now enter your destination the same way.</string>
+    <string name="coach_map_title">Pick on the map</string>
+    <string name="coach_map_body">Tap the map icon to choose both stations right on the Tehran map – or jump to the station nearest to you.</string>
+    <string name="coach_swap_title">Return trip in one tap</string>
+    <string name="coach_swap_body">Swap origin and destination instantly.</string>
+    <string name="coach_fastest_title">Find the fastest route</string>
+    <string name="coach_fastest_body">Tap “Fastest Route” to see travel time, which direction to board and where to change lines. From there you can view every station, show the trip on the map or tap “Wake me up” to be alerted before each change and your stop.</string>
+    <string name="coach_lines_title">All metro lines</string>
+    <string name="coach_lines_body">Tap this section to expand it and see every line with its official colour and terminal stations.</string>
+    <string name="coach_menu_title">The menu</string>
+    <string name="coach_menu_body">Open the menu to switch between English and Persian, choose day or night mode, or contact the developer.</string>
+    <string name="coach_help_title">Need a refresher?</string>
+    <string name="coach_help_body">Tap the question mark at any time to replay this tour.</string>
+
+    <!-- Wake me up (trip tracking) -->
+    <string name="wake_me_up">Wake me up</string>
+    <string name="ride_alerts_title">Wake-me-up alerts are on</string>
+    <string name="ride_alerts_body">Your phone will vibrate and ring one station before each change and before your stop – even with the screen off.</string>
+    <string name="ride_alerts_stopped">Trip tracking has ended</string>
+    <string name="ride_notifications_off">Notifications are off, so alerts will only vibrate and ring. Allow them to also see alerts on screen.</string>
+    <string name="ride_allow">Allow</string>
+    <string name="ride_im_here">I\'m at %1$s</string>
+    <string name="ride_tap_hint">Ahead or behind schedule? Tap the station you\'re at to correct your position.</string>
+    <string name="ride_confirm_title">Are you at %1$s?</string>
+    <string name="ride_confirm_body">Your progress and alerts will be adjusted from this station.</string>
+    <string name="ride_confirm_ok">I\'m here</string>
+    <string name="ride_no_trip">No trip is being tracked right now.</string>
+    <string name="trip_channel_name">Trip tracking</string>
+    <string name="trip_channel_description">Shows your next station while a trip is being tracked</string>
+    <string name="trip_notif_starting">Starting trip tracking…</string>
+    <string name="trip_notif_next">Next: %1$s</string>
+    <string name="trip_notif_arriving">Arriving at %1$s</string>
+    <string name="trip_notif_body">%1$s min to %2$s · arrive ≈ %3$s</string>
+    <string name="trip_notif_stop">Stop</string>
+
+    <!-- Last train -->
+    <string name="last_train_safe_title">Last train today: leave by %1$s</string>
+    <string name="last_train_at_risk_title">Leave within %1$s min to catch the last train</string>
+    <string name="last_train_leave_now">Leave now to catch the last train</string>
+    <string name="last_train_latest">Latest departure from %1$s: %2$s</string>
+    <string name="last_train_missed_title">This trip can no longer be completed today</string>
+    <string name="last_train_missed_body">The last possible departure from %1$s was %2$s. The last trains have already left.</string>
+    <string name="last_train_critical">Depends on the last %1$s train toward %2$s</string>
+    <string name="last_train_unverified">Timetable not yet verified – check notices at the station.</string>
+    <string name="day_weekday">Weekday timetable</string>
+    <string name="day_friday">Friday timetable</string>
+    <string name="day_holiday">Holiday timetable</string>
+    <string name="reminder_set_action">Remind me</string>
+    <string name="reminder_active">Reminder at %1$s</string>
+    <string name="reminder_cancel">Cancel</string>
+    <string name="reminder_dialog_title">Remind me before the last train</string>
+    <string name="reminder_option">%1$s min before (%2$s)</string>
+    <string name="reminder_scheduled">Reminder set for %1$s</string>
+    <string name="reminder_too_late">It\'s too late for a reminder – leave now.</string>
+    <string name="reminder_title">Time to head to the metro</string>
+    <string name="reminder_body">Leave by %1$s to catch the last train from %2$s to %3$s.</string>
+    <string name="reminder_channel_name">Last-train reminders</string>
+    <string name="reminder_channel_description">Reminds you to leave in time for the last train</string>
+
+    <!-- Women-only cars -->
+    <string name="women_cars_title">Women-only cars</string>
+    <string name="women_cars_front">At the front of the train</string>
+    <string name="women_cars_rear">At the rear of the train</string>
+    <string name="women_cars_front_rear">At the front and rear of the train</string>
+    <string name="women_cars_middle">In the middle of the train</string>
+    <string name="women_cars_numbers">Cars %1$s (counted from the front)</string>
+    <string name="women_cars_front_label">Front</string>
+    <string name="women_cars_rear_label">Rear</string>
+    <string name="women_cars_diagram_cd">Train of %1$s cars; women-only cars: %2$s, counted from the front</string>
+    <string name="data_unverified">Unverified</string>
+
+    <!-- Favourites & widget -->
+    <string name="favorite_add">Save as favourite</string>
+    <string name="favorite_remove">Remove from favourites</string>
+    <string name="favorite_dialog_title">Save favourite route</string>
+    <string name="favorite_label">Name</string>
+    <string name="favorite_label_hint">e.g. Home → Work</string>
+    <string name="favorite_saved">Saved to favourites</string>
+    <string name="favorite_removed">Removed from favourites</string>
+    <string name="favorites_title">Favourite routes</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="widget_title">Favourite routes</string>
+    <string name="widget_empty">Save a route as a favourite (★ on the trip screen) to see it here.</string>
+    <string name="widget_description">Your favourite metro routes with travel times – works offline</string>
+
+    <!-- Offline -->
+    <string name="offline_map_title">You\'re offline</string>
+    <string name="offline_map_body">Street details are hidden, but the metro map, routes, times and alerts all work offline.</string>
 </resources>

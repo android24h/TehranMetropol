@@ -1,0 +1,241 @@
+<resources>
+    <string name="app_name">متروپل</string>
+    <string name="app_tagline">متروی تهران، ساده و زیبا</string>
+
+    <!-- Home -->
+    <string name="home_greeting_title">امروز کجا می‌روید؟</string>
+    <string name="home_greeting_subtitle">%1$s خط · %2$s ایستگاه در سراسر تهران</string>
+    <string name="origin_label">مبدأ</string>
+    <string name="origin_placeholder">ایستگاه شروع، مثلاً صادقیه</string>
+    <string name="destination_label">مقصد</string>
+    <string name="destination_placeholder">به کجا؟ مثلاً میرداماد</string>
+    <string name="pick_on_map">انتخاب ایستگاه‌ها روی نقشه</string>
+    <string name="swap">جابه‌جایی مبدأ و مقصد</string>
+    <string name="clear">پاک کردن</string>
+    <string name="fastest_route">سریع‌ترین مسیر</string>
+    <string name="recent_trips">سفرهای اخیر</string>
+    <string name="clear_all">پاک کردن همه</string>
+    <string name="metro_lines">خطوط مترو</string>
+    <string name="line_number">خط %1$s</string>
+    <string name="menu">منو</string>
+    <string name="help">راهنما</string>
+    <string name="error_pick_origin">لطفاً ایستگاه مبدأ را از پیشنهادها انتخاب کنید</string>
+    <string name="error_pick_destination">لطفاً ایستگاه مقصد را از پیشنهادها انتخاب کنید</string>
+    <string name="error_same_station">مبدأ و مقصد یک ایستگاه هستند</string>
+    <string name="no_results">ایستگاهی با «%1$s» پیدا نشد</string>
+    <string name="interchange">ایستگاه تبادلی</string>
+
+    <!-- Drawer -->
+    <string name="drawer_language">زبان</string>
+    <string name="drawer_appearance">حالت نمایش</string>
+    <string name="theme_system">خودکار</string>
+    <string name="theme_light">روز</string>
+    <string name="theme_dark">شب</string>
+    <string name="drawer_help">آموزش برنامه</string>
+    <string name="drawer_developer">توسعه‌دهنده</string>
+    <string name="developer_name">علیرضا حلوایی فرد</string>
+    <string name="developer_role">توسعه‌دهنده اندروید</string>
+    <string name="mobile">موبایل</string>
+    <string name="email">ایمیل</string>
+    <string name="version_label">نسخه %1$s</string>
+
+    <!-- Map picker -->
+    <string name="picker_title">انتخاب روی نقشه</string>
+    <string name="picker_hint">روی هر ایستگاه در نقشه بزنید</string>
+    <string name="set_origin">مبدأ شود</string>
+    <string name="set_destination">مقصد شود</string>
+    <string name="confirm">تأیید</string>
+    <string name="from_label">از</string>
+    <string name="to_label">به</string>
+    <string name="not_selected">انتخاب نشده</string>
+    <string name="near_me">نزدیک‌ترین ایستگاه به من</string>
+    <string name="locating">در حال یافتن موقعیت شما…</string>
+    <string name="location_unavailable">موقعیت شما پیدا نشد. مطمئن شوید مکان‌یاب روشن است.</string>
+    <string name="location_denied">برای یافتن نزدیک‌ترین ایستگاه، اجازه دسترسی به موقعیت لازم است.</string>
+    <string name="nearest_station_found">نزدیک‌ترین ایستگاه: %1$s · فاصله %2$s</string>
+    <string name="distance_m">%1$s متر</string>
+    <string name="distance_km">%1$s کیلومتر</string>
+    <string name="back">بازگشت</string>
+
+    <!-- Route -->
+    <string name="route_title">سفر شما</string>
+    <string name="minutes_short">دقیقه</string>
+    <string name="arrive_at">رسیدن %1$s</string>
+    <plurals name="stops_count">
+        <item quantity="one">%1$s ایستگاه</item>
+        <item quantity="other">%1$s ایستگاه</item>
+    </plurals>
+    <string name="transfers_none">بدون تعویض خط</string>
+    <plurals name="transfers_count">
+        <item quantity="one">%1$s تعویض خط</item>
+        <item quantity="other">%1$s تعویض خط</item>
+    </plurals>
+    <string name="pref_fastest">سریع‌ترین</string>
+    <string name="pref_fewest">کمترین تعویض</string>
+    <string name="status_peak">ساعت اوج – قطارها پرتکرار اما شلوغ‌اند.</string>
+    <string name="status_late">اواخر شب – فاصله حرکت قطارها بیشتر است.</string>
+    <string name="status_closed">مترو اکنون تعطیل است (ساعت کار ≈ ۰۵:۳۰ تا ۲۲:۳۰). زمان‌ها بر اساس اولین قطارهای صبح است.</string>
+    <string name="start_at">شروع از %1$s</string>
+    <string name="take_line_toward">سوار %1$s به سمت %2$s شوید</string>
+    <string name="board_hint">تابلوهای سکوی «%1$s» را دنبال کنید</string>
+    <string name="wait_about">انتظار ≈ %1$s دقیقه · هر %2$s دقیقه یک قطار</string>
+    <string name="ride_stops">%1$s · %2$s دقیقه</string>
+    <string name="get_off_at">در %1$s پیاده شوید</string>
+    <string name="change_at">تعویض خط در %1$s</string>
+    <string name="walk_to_line">پیاده‌روی ≈ %1$s دقیقه تا سکوی %2$s</string>
+    <string name="arrive_destination">رسیدن به %1$s</string>
+    <string name="arrive_eta">زمان تقریبی رسیدن %1$s</string>
+    <string name="more_details">جزئیات بیشتر</string>
+    <string name="less_details">بستن جزئیات</string>
+    <string name="all_stations">همه ایستگاه‌های مسیر شما</string>
+    <string name="leg_header">%1$s · به سمت %2$s</string>
+    <string name="wait_leg">انتظار ≈ %1$s دقیقه</string>
+    <string name="walk_leg">پیاده‌روی ≈ %1$s دقیقه</string>
+    <string name="show_on_map">نمایش روی نقشه</string>
+    <string name="eco_title">سفری سبزتر</string>
+    <string name="eco_body">در مقایسه با %2$s کیلومتر رانندگی، حدود %1$s کیلوگرم CO₂ کمتر تولید می‌کنید.</string>
+    <string name="route_not_found">مسیری بین این ایستگاه‌ها پیدا نشد.</string>
+    <string name="total_wait">مجموع انتظار ≈ %1$s دقیقه</string>
+    <string name="transfer_badge">تعویض</string>
+    <string name="estimates_note">زمان‌ها تقریبی و بر اساس فاصله حرکت معمول قطارهاست.</string>
+    <string name="steps_title">گام به گام</string>
+    <string name="retry">تلاش دوباره</string>
+
+    <!-- Ride mode -->
+    <string name="ride_title">پیگیری سفر</string>
+    <string name="ride_remaining">دقیقه مانده</string>
+    <string name="ride_to">تا %1$s</string>
+    <string name="ride_phase_waiting">منتظر %1$s به سمت %2$s</string>
+    <string name="ride_phase_riding">در %1$s به سمت %2$s</string>
+    <string name="ride_phase_transfer">در حال تعویض به %1$s در %2$s</string>
+    <string name="ride_phase_arrived">به %1$s رسیدید 🎉</string>
+    <string name="ride_next_stop">ایستگاه بعدی</string>
+    <string name="ride_coming_up">در پیش رو</string>
+    <string name="ride_next_transfer">تعویض به %1$s در %2$s تا ≈ %3$s دقیقه دیگر</string>
+    <string name="ride_next_arrival">پیاده شدن در %1$s تا ≈ %2$s دقیقه دیگر</string>
+    <string name="ride_end">توقف پیگیری</string>
+    <string name="ride_done">تمام</string>
+    <string name="ride_note">پیشرفت سفر بر اساس زمان‌بندی تخمینی است (GPS زیر زمین کار نمی‌کند). اگر جلوتر یا عقب‌تر هستید، روی ایستگاهی که در آن هستید بزنید.</string>
+    <string name="ride_elapsed">%1$s دقیقه از سفر گذشته</string>
+
+    <!-- Alerts -->
+    <string name="alert_channel_name">هشدارهای بیدارباش</string>
+    <string name="alert_channel_description">یک ایستگاه پیش از هر تعویض خط و پیش از مقصد، لرزش و صدا</string>
+    <string name="alert_transfer_title">ایستگاه بعد: تعویض در %1$s</string>
+    <string name="alert_transfer_body">آماده شوید به خط %1$s به سمت %2$s بروید.</string>
+    <string name="alert_arrival_title">نزدیک %1$s هستید</string>
+    <string name="alert_arrival_body">ایستگاه بعدی مقصد شماست – آماده پیاده شدن باشید.</string>
+
+    <!-- Metro lines section -->
+    <string name="metro_lines_summary">%1$s خط · برای دیدن همه بزنید</string>
+    <string name="state_expanded">باز</string>
+    <string name="state_collapsed">بسته</string>
+
+    <!-- Drawer extras -->
+    <string name="close_menu">بستن منو</string>
+    <string name="developed_by">طراحی و توسعه</string>
+    <string name="developer_cta">راه‌های ارتباطی</string>
+
+    <!-- Splash -->
+    <string name="splash_tribute">به یاد عزیزانی که در حادثه‌ی متروپل از میان ما رفتند؛ یادتان همیشه در قلب ما زنده است.</string>
+    <string name="splash_ribbon">روبان سیاه یادبود</string>
+
+    <!-- Tutorial (coach marks on the home screen) -->
+    <string name="tutorial_skip">رد شدن</string>
+    <string name="tutorial_next">بعدی</string>
+    <string name="tutorial_done">شروع کنیم</string>
+    <string name="tutorial_step">گام %1$s از %2$s</string>
+    <string name="tutorial_tap_hint">برای ادامه هر جای صفحه را بزنید</string>
+    <string name="coach_origin_title">نقطه شروع سفر</string>
+    <string name="coach_origin_body">برای انتخاب مبدأ اینجا را بزنید. نام ایستگاه را به فارسی یا انگلیسی بنویسید و از میان پیشنهادها انتخاب کنید.</string>
+    <string name="coach_destination_title">به کجا می‌روید؟</string>
+    <string name="coach_destination_body">حالا مقصد خود را به همین شکل وارد کنید.</string>
+    <string name="coach_map_title">انتخاب از روی نقشه</string>
+    <string name="coach_map_body">روی آیکون نقشه بزنید تا هر دو ایستگاه را مستقیم روی نقشه تهران انتخاب کنید – یا نزدیک‌ترین ایستگاه به خودتان را پیدا کنید.</string>
+    <string name="coach_swap_title">مسیر برگشت با یک لمس</string>
+    <string name="coach_swap_body">جای مبدأ و مقصد را فوراً عوض کنید.</string>
+    <string name="coach_fastest_title">سریع‌ترین مسیر را پیدا کنید</string>
+    <string name="coach_fastest_body">«سریع‌ترین مسیر» را بزنید تا زمان سفر، جهت سوار شدن و محل تعویض خط را ببینید. سپس می‌توانید همه ایستگاه‌ها را ببینید، مسیر را روی نقشه نمایش دهید یا با «بیدارم کن» پیش از هر تعویض و مقصد هشدار بگیرید.</string>
+    <string name="coach_lines_title">همه خطوط مترو</string>
+    <string name="coach_lines_body">روی این بخش بزنید تا باز شود و همه خطوط را با رنگ رسمی و ایستگاه‌های ابتدا و انتهای آن‌ها ببینید.</string>
+    <string name="coach_menu_title">منو</string>
+    <string name="coach_menu_body">از منو، زبان را بین فارسی و انگلیسی تغییر دهید، حالت روز یا شب را انتخاب کنید یا با توسعه‌دهنده در تماس باشید.</string>
+    <string name="coach_help_title">نیاز به یادآوری دارید؟</string>
+    <string name="coach_help_body">هر زمان خواستید، با زدن علامت سؤال این راهنما را دوباره ببینید.</string>
+
+    <!-- Wake me up (trip tracking) -->
+    <string name="wake_me_up">بیدارم کن</string>
+    <string name="ride_alerts_title">هشدار بیدارباش فعال است</string>
+    <string name="ride_alerts_body">یک ایستگاه پیش از هر تعویض و پیش از مقصد، گوشی می‌لرزد و زنگ می‌زند – حتی وقتی صفحه خاموش است.</string>
+    <string name="ride_alerts_stopped">پیگیری سفر پایان یافت</string>
+    <string name="ride_notifications_off">اعلان‌ها خاموش هستند؛ هشدارها فقط با لرزش و صدا داده می‌شوند. برای دیدن هشدار روی صفحه، اعلان‌ها را مجاز کنید.</string>
+    <string name="ride_allow">اجازه دادن</string>
+    <string name="ride_im_here">در %1$s هستم</string>
+    <string name="ride_tap_hint">جلوتر یا عقب‌تر از زمان‌بندی هستید؟ روی ایستگاهی که در آن هستید بزنید تا موقعیتتان اصلاح شود.</string>
+    <string name="ride_confirm_title">در %1$s هستید؟</string>
+    <string name="ride_confirm_body">پیشرفت سفر و هشدارها از این ایستگاه تنظیم می‌شوند.</string>
+    <string name="ride_confirm_ok">اینجا هستم</string>
+    <string name="ride_no_trip">در حال حاضر سفری پیگیری نمی‌شود.</string>
+    <string name="trip_channel_name">پیگیری سفر</string>
+    <string name="trip_channel_description">نمایش ایستگاه بعدی هنگام پیگیری سفر</string>
+    <string name="trip_notif_starting">در حال شروع پیگیری سفر…</string>
+    <string name="trip_notif_next">بعدی: %1$s</string>
+    <string name="trip_notif_arriving">در حال رسیدن به %1$s</string>
+    <string name="trip_notif_body">%1$s دقیقه تا %2$s · رسیدن ≈ %3$s</string>
+    <string name="trip_notif_stop">توقف</string>
+
+    <!-- Last train -->
+    <string name="last_train_safe_title">آخرین قطار امروز: تا %1$s حرکت کنید</string>
+    <string name="last_train_at_risk_title">برای رسیدن به آخرین قطار، تا %1$s دقیقه دیگر حرکت کنید</string>
+    <string name="last_train_leave_now">برای رسیدن به آخرین قطار همین حالا حرکت کنید</string>
+    <string name="last_train_latest">آخرین زمان حرکت از %1$s: %2$s</string>
+    <string name="last_train_missed_title">این سفر امروز دیگر ممکن نیست</string>
+    <string name="last_train_missed_body">آخرین زمان ممکن برای حرکت از %1$s ساعت %2$s بود. آخرین قطارها رفته‌اند.</string>
+    <string name="last_train_critical">وابسته به آخرین قطار %1$s به سمت %2$s</string>
+    <string name="last_train_unverified">زمان‌بندی هنوز تأیید نشده است – اطلاعیه‌های ایستگاه را بررسی کنید.</string>
+    <string name="day_weekday">برنامه روزهای عادی</string>
+    <string name="day_friday">برنامه جمعه</string>
+    <string name="day_holiday">برنامه روزهای تعطیل</string>
+    <string name="reminder_set_action">یادآوری کن</string>
+    <string name="reminder_active">یادآوری در %1$s</string>
+    <string name="reminder_cancel">لغو</string>
+    <string name="reminder_dialog_title">یادآوری پیش از آخرین قطار</string>
+    <string name="reminder_option">%1$s دقیقه قبل (%2$s)</string>
+    <string name="reminder_scheduled">یادآوری برای %1$s تنظیم شد</string>
+    <string name="reminder_too_late">برای یادآوری دیر است – همین حالا حرکت کنید.</string>
+    <string name="reminder_title">وقت رفتن به مترو است</string>
+    <string name="reminder_body">تا %1$s حرکت کنید تا به آخرین قطار از %2$s به %3$s برسید.</string>
+    <string name="reminder_channel_name">یادآوری آخرین قطار</string>
+    <string name="reminder_channel_description">یادآوری برای رسیدن به موقع به آخرین قطار</string>
+
+    <!-- Women-only cars -->
+    <string name="women_cars_title">واگن‌های ویژه بانوان</string>
+    <string name="women_cars_front">ابتدای قطار</string>
+    <string name="women_cars_rear">انتهای قطار</string>
+    <string name="women_cars_front_rear">ابتدا و انتهای قطار</string>
+    <string name="women_cars_middle">وسط قطار</string>
+    <string name="women_cars_numbers">واگن‌های %1$s (از جلوی قطار)</string>
+    <string name="women_cars_front_label">جلو</string>
+    <string name="women_cars_rear_label">عقب</string>
+    <string name="women_cars_diagram_cd">قطار %1$s واگنی؛ واگن‌های ویژه بانوان: %2$s، از جلوی قطار</string>
+    <string name="data_unverified">تأییدنشده</string>
+
+    <!-- Favourites & widget -->
+    <string name="favorite_add">ذخیره در مسیرهای محبوب</string>
+    <string name="favorite_remove">حذف از مسیرهای محبوب</string>
+    <string name="favorite_dialog_title">ذخیره مسیر محبوب</string>
+    <string name="favorite_label">نام</string>
+    <string name="favorite_label_hint">مثلاً خانه ← محل کار</string>
+    <string name="favorite_saved">در مسیرهای محبوب ذخیره شد</string>
+    <string name="favorite_removed">از مسیرهای محبوب حذف شد</string>
+    <string name="favorites_title">مسیرهای محبوب</string>
+    <string name="save">ذخیره</string>
+    <string name="cancel">انصراف</string>
+    <string name="widget_title">مسیرهای محبوب</string>
+    <string name="widget_empty">یک مسیر را از صفحه سفر (★) به محبوب‌ها اضافه کنید تا اینجا نمایش داده شود.</string>
+    <string name="widget_description">مسیرهای محبوب مترو با زمان سفر – بدون نیاز به اینترنت</string>
+
+    <!-- Offline -->
+    <string name="offline_map_title">اینترنت در دسترس نیست</string>
+    <string name="offline_map_body">جزئیات خیابان‌ها نمایش داده نمی‌شود، اما نقشه مترو، مسیریابی، زمان‌ها و هشدارها بدون اینترنت کار می‌کنند.</string>
+</resources>
