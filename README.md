@@ -75,7 +75,7 @@ The total is shown as travel time and arrival clock, with times for each leg and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/android24h/Metropol.git
+   git clone https://github.com/android24h/TehranMetropol.git
    ```
 2. Copy `local.properties.example` to `local.properties` in the project root.
 3. Get an API key from the [Neshan developer panel](https://platform.neshan.org/) and add it:
@@ -87,13 +87,23 @@ The total is shown as travel time and arrival clock, with times for each leg and
 
 ## 📸 Screenshots
 
-| Home | Route | Metro vs Car |
-|---|---|---|
-| ![Home](docs/screenshots/home.png) | ![Route](docs/screenshots/route.png) | ![Metro vs Car](docs/screenshots/comparison.png) |
-
-| Map | Ride mode | Widget |
-|---|---|---|
-| ![Map](docs/screenshots/map.png) | ![Ride mode](docs/screenshots/ride.png) | ![Widget](docs/screenshots/widget.png) |
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/splash.jpg" width="220" alt="Splash screen"><br><sub>Splash screen</sub></td>
+    <td align="center"><img src="docs/screenshots/home.jpg" width="220" alt="Home"><br><sub>Home: choose origin and destination</sub></td>
+    <td align="center"><img src="docs/screenshots/route.jpg" width="220" alt="Route result"><br><sub>Route result with last-train check</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/comparison.jpg" width="220" alt="Metro vs car"><br><sub>Metro vs car with live traffic</sub></td>
+    <td align="center"><img src="docs/screenshots/route-stations.jpg" width="220" alt="Stations on the route"><br><sub>Every station with estimated times</sub></td>
+    <td align="center"><img src="docs/screenshots/route-transfers.jpg" width="220" alt="Line changes"><br><sub>Line changes and walking time</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/settings.jpg" width="220" alt="Settings menu"><br><sub>Language, theme and tutorial</sub></td>
+  </tr>
+</table>
+</div>
 
 ## 🕯 Dedication
 
