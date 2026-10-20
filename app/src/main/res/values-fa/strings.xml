@@ -94,6 +94,16 @@
     <string name="show_on_map">نمایش روی نقشه</string>
     <string name="eco_title">سفری سبزتر</string>
     <string name="eco_body">در مقایسه با %2$s کیلومتر رانندگی، حدود %1$s کیلوگرم CO₂ کمتر تولید می‌کنید.</string>
+    <string name="comparison_title">مترو یا خودرو؟</string>
+    <string name="comparison_metro">مترو</string>
+    <string name="comparison_car">خودروی شخصی</string>
+    <string name="comparison_minutes">%s دقیقه</string>
+    <string name="comparison_metro_faster">مترو %s دقیقه سریع‌تر است</string>
+    <string name="comparison_car_faster">خودرو %s دقیقه سریع‌تر است</string>
+    <string name="comparison_same">هر دو تقریباً هم‌زمان می‌رسند</string>
+    <string name="comparison_car_offline">برای دیدن زمان خودرو به اینترنت وصل شوید</string>
+    <string name="comparison_car_error">زمان خودرو در حال حاضر در دسترس نیست</string>
+    <string name="comparison_car_note">زمان خودرو با ترافیک فعلی (نشان) و از ایستگاه تا ایستگاه است.</string>
     <string name="route_not_found">مسیری بین این ایستگاه‌ها پیدا نشد.</string>
     <string name="total_wait">مجموع انتظار ≈ %1$s دقیقه</string>
     <string name="transfer_badge">تعویض</string>

@@ -1,21 +1,28 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
+# Secrets / machine-specific
+local.properties
+
+# Gradle / Kotlin / build output
+.gradle/
+.kotlin/
+build/
 /captures
 .externalNativeBuild
 .cxx
-local.properties
+app/release/
+*.apk
+*.aab
 
-# Build / JVM crash logs
-build.log
-build_claude.log
-hs_err_pid*.log
-replay_pid*.log
+# IDE (keep shared code style and inspection settings)
+.idea/*
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+*.iml
+
+# Logs and JVM crash dumps
+*.log
+hs_err_pid*
+replay_pid*
+
+# OS
+.DS_Store
+Thumbs.db

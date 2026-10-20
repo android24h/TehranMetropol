@@ -1,15 +1,22 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
+// Secrets live in the git-ignored local.properties, never in source control.
+val localProperties = Properties().apply {
+    rootProject.file("local.properties").takeIf { it.exists() }?.inputStream()?.use { load(it) }
+}
+
 android {
-    namespace = "com.example.tehranmetropoll"
+    namespace = "ir.halvaei.metropol"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.tehranmetropoll"
+        applicationId = "ir.halvaei.metropol"
         minSdk = 24
         targetSdk = 35
         versionCode = 2
@@ -19,6 +26,9 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        val neshanKey = localProperties.getProperty("NESHAN_API_KEY", "").trim()
+        buildConfigField("String", "NESHAN_API_KEY", "\"${neshanKey.replace("\\", "\\\\").replace("\"", "\\\"")}\"")
     }
 
     androidResources {

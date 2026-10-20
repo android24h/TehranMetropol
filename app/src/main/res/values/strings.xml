@@ -99,6 +99,16 @@
     <string name="show_on_map">Show on map</string>
     <string name="eco_title">Greener trip</string>
     <string name="eco_body">You save ≈ %1$s kg CO₂ compared with driving %2$s km.</string>
+    <string name="comparison_title">Metro or car?</string>
+    <string name="comparison_metro">Metro</string>
+    <string name="comparison_car">Private car</string>
+    <string name="comparison_minutes">%s min</string>
+    <string name="comparison_metro_faster">Metro is %s min faster</string>
+    <string name="comparison_car_faster">Car is %s min faster</string>
+    <string name="comparison_same">Both take about the same time</string>
+    <string name="comparison_car_offline">Connect to the internet to see the car time</string>
+    <string name="comparison_car_error">Car time is unavailable right now</string>
+    <string name="comparison_car_note">Car time includes current traffic (Neshan), station to station.</string>
     <string name="route_not_found">No route found between these stations.</string>
     <string name="total_wait">Total waiting ≈ %1$s min</string>
     <string name="transfer_badge">Change</string>

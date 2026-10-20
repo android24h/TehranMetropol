@@ -1,3 +1,3 @@
 # Gson DTOs are populated reflectively.
--keep class com.example.tehranmetropoll.data.dto.** { *; }
+-keep class ir.halvaei.metropol.data.dto.** { *; }
 -keepattributes Signature, *Annotation*
